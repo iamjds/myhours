@@ -1,0 +1,42 @@
+<div class="ion-page" id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start" class="primary">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        My Hours
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content [fullscreen]="true">
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Analyze</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title class="ion-text-center ">Missing Slots</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content class="ion-padding-top">
+        <div class="circle-gradient">
+          <div class="ion-text-center circle-text">
+            {{missingSlotsPerRangeSelected}}
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-content>
+      <ion-label></ion-label>
+      <ion-progress-bar></ion-progress-bar>
+    </ion-content>
+
+
+  </ion-content>
+</div>
