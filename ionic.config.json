@@ -1,0 +1,7 @@
+{
+  "name": "myhours",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
