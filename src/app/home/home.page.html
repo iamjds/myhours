@@ -10,11 +10,11 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Home</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
   <ion-item>
     <ion-label>{{dayName}}</ion-label>
@@ -25,8 +25,8 @@
 
   <ion-item *ngFor="let t of globals.timeLabels">
     <ion-label>{{t.slot}}</ion-label>
-    <ion-input inputmode="text" placeholder="what happened here?"
-      (ionInput)="saveInputChanges(t, dateSelected, $event)" [(ngModel)]="t.details"></ion-input>
+    <ion-input inputmode="text" placeholder="what happened here?" (ionInput)="saveInputChanges(t, dateSelected, $event)"
+      [(ngModel)]="t.details"></ion-input>
   </ion-item>
 
   <br />

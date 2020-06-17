@@ -1,0 +1,32 @@
+ion-card {
+    --background: #fff;
+    --color: #222428;
+
+    ion-card-title {
+        --color: #222428;
+    }
+
+    ion-card-content {
+        background: #0d0d0d;
+        padding-top: 16px !important;
+
+        .circle-gradient {
+            width: 300px;
+            height: 300px;
+            border: double 4px transparent;
+            border-radius: 150px;
+            background-image: linear-gradient(#0d0d0d, #0d0d0d), radial-gradient(circle at top left, #f00,#3020ff);
+            background-origin: border-box;
+            background-clip: content-box, border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .circle-text {
+                font-size: 100px;
+                line-height: 0;
+                color: #fff;
+            }
+        }
+    }
+}

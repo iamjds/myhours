@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Storage } from '@ionic/storage';
 import { HoursGlobals } from '../app.global';
-// import { MenuComponent } from '../menu/menu.component';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +9,7 @@ import { HoursGlobals } from '../app.global';
 })
 export class HomePage {
 
+  pageTitle = 'Home';
   appPages = [];
   dayName = '';
   dayNames = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
@@ -19,8 +19,6 @@ export class HomePage {
 
   ngOnInit() {
     this.appPages = this.globals.appPages;
-
-    console.log(this.appPages);
   }
 
   ngAfterViewInit() {
@@ -45,6 +43,7 @@ export class HomePage {
       let slot = mdy + _t.slot.split(':').join('');
 
       this.storage.get(slot).then((res) => {
+        console.log(res);
         _t.details = res || '';
       })
     });

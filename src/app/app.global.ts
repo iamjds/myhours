@@ -4,24 +4,24 @@ import { Injectable } from '@angular/core';
 export class HoursGlobals {
     appPages = [
         {
-        title: 'Home',
-        url: '/home',
-        icon: 'home-outline'
+            title: 'Home',
+            url: '/home',
+            icon: 'home'
         },
         {
-        title: 'Analyze',
-        url: '/analyze',
-        icon: 'flask-outline'
+            title: 'Analyze',
+            url: '/analyze',
+            icon: 'flask'
         },
         {
-        title: 'Settings',
-        url: '/settings',
-        icon: 'setting-outline'
+            title: 'Settings',
+            url: '/settings',
+            icon: 'settings'
         },
         {
-        title: 'Help',
-        url: '/help',
-        icon: 'information-circle-outline'
+            title: 'Help',
+            url: '/help',
+            icon: 'information-circle'
         }
     ];
 
